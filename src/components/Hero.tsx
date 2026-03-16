@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-const ROLES = ['Frontend Engineer', 'Fullstack Developer', 'React Specialist'];
+const ROLES = ['Frontend Engineer', 'Fullstack Developer', 'React Specialist','Backend Engineer'];
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -89,15 +89,11 @@ export default function Hero() {
         </span>
       </div>
 
-      {/* Decorative corner brackets */}
+      {/* 邊角brackets */}
       <div className="absolute top-24 left-8 w-12 h-12 border-t border-l border-[#00F5FF]/20" />
       <div className="absolute top-24 right-8 w-12 h-12 border-t border-r border-[#00F5FF]/20" />
       <div className="absolute bottom-16 left-8 w-12 h-12 border-b border-l border-[#00F5FF]/20" />
       <div className="absolute bottom-16 right-8 w-12 h-12 border-b border-r border-[#00F5FF]/20" />
-
-      {/* Vertical line decorations */}
-      <div className="absolute left-[10%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#00F5FF]/10 to-transparent hidden lg:block" />
-      <div className="absolute right-[10%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#BF5AF2]/10 to-transparent hidden lg:block" />
 
       <motion.div
         style={{ y, opacity, scale }}
@@ -117,7 +113,7 @@ export default function Hero() {
           <span className="w-2 h-2 bg-[#39FF14] rounded-full animate-pulse" />
         </motion.div>
 
-        {/* Main name — HUGE */}
+        {/* Main name */}
         <motion.h1
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
@@ -133,7 +129,7 @@ export default function Hero() {
           ELLIE CHEN
         </motion.h1>
 
-        {/* Glitch underline */}
+        {/* Glitch裝飾線 */}
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
@@ -156,7 +152,6 @@ export default function Hero() {
           <span className="w-6 md:w-8 h-px bg-[#00F5FF]/40" />
         </motion.div>
 
-        {/* Brief description */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -167,7 +162,7 @@ export default function Hero() {
           從前端互動到後端架構，全端掌握。
         </motion.p>
 
-        {/* CTA buttons */}
+        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -189,7 +184,6 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Stats row */}
         {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -209,7 +203,7 @@ export default function Hero() {
         </motion.div> */}
       </motion.div>
 
-      {/* Scroll indicator */}
+      {/* Scroll提示 */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

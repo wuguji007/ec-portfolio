@@ -46,7 +46,7 @@ a, button, [role="button"] {
   background-size: 128px 128px;
 }
 
-/* Scan line */
+/* 掃描線Scanline */
 .scanline {
   position: fixed;
   width: 100%;

@@ -77,7 +77,7 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* Availability card */}
+            {/* Availability */}
             <div className="border border-[#39FF14]/20 bg-[#39FF14]/[0.03] p-6">
               <div className="flex items-center gap-3 mb-3">
                 <span className="w-2 h-2 bg-[#39FF14] rounded-full animate-pulse" />

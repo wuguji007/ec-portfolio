@@ -21,7 +21,7 @@ export default function About() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="relative"
           >
-            {/* Avatar / visual placeholder */}
+            {/* Avatar */}
             <div className="relative w-full aspect-[4/5] max-w-sm mx-auto">
               {/* 外部glow frame */}
               <div className="absolute inset-0 border border-[#00F5FF]/20 border-glow-cyan" />

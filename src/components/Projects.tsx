@@ -28,7 +28,7 @@ function PreviewFrame({ project }: { project: typeof projects[0] }) {
       <div className="absolute -bottom-1 -left-1 w-4 h-4 border-b-2 border-l-2 z-10" style={{ borderColor: project.accentColor }} />
       <div className="absolute -bottom-1 -right-1 w-4 h-4 border-b-2 border-r-2 z-10" style={{ borderColor: project.color }} />
 
-      {/* Scan line */}
+      {/* 掃描線Scanline */}
       <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
         <div
           className="absolute w-full h-px opacity-25 animate-[previewScan_3s_linear_infinite]"
@@ -54,7 +54,7 @@ function PreviewFrame({ project }: { project: typeof projects[0] }) {
           </div>
         </div>
 
-        {/* Screenshot — swap src to change image */}
+        {/* 預覽畫面image */}
         <img
           src={project.previewImg}
           alt={`${project.title} preview`}
@@ -65,7 +65,7 @@ function PreviewFrame({ project }: { project: typeof projects[0] }) {
             if (fb) fb.style.display = 'flex';
           }}
         />
-        {/* Fallback when no image */}
+        {/* 預設fallback */}
         <div
           className="w-full aspect-video hidden flex-col items-center justify-center gap-3"
           style={{ background: `linear-gradient(135deg, ${project.color}08, ${project.accentColor}08)` }}
