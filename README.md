@@ -1,4 +1,4 @@
-# EC-Portfolio - 流暢動效與極速性能的現代化開發實踐
+# EC-Portfolio 
 
 EC-Portfolio 是一個基於 React 18 與 TypeScript 打造的極速響應式作品集網站。專案採用 Vite 作為核心建構工具，結合 Tailwind CSS、 CSS Keyframes 與高階動效庫 Framer Motion，旨在提供卓越的視覺體驗與流暢的交互動態。
 
