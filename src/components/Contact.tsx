@@ -41,7 +41,7 @@ export default function Contact() {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Left — contact info */}
+          {/* 左欄 contact info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -89,7 +89,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Right — form */}
+          {/* 右欄 contact form */}
           {/* <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}

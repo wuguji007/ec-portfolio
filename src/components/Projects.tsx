@@ -36,11 +36,11 @@ function PreviewFrame({ project }: { project: typeof projects[0] }) {
         />
       </div>
 
-      {/* Browser chrome + image */}
+      {/* 預覽畫面Mock chrome*/}
       <div className="border overflow-hidden" style={{ borderColor: `${project.color}25`, background: `${project.color}04` }}>
-        {/* Mock browser bar */}
+
         <div
-          className="flex items-center gap-1.5 px-3 py-2 border-b"
+          className="flex items-center gap-1.5 px-3 py-1 border-b"
           style={{ borderColor: `${project.color}12`, background: `${project.color}08` }}
         >
           <div className="w-2 h-2 rounded-full bg-white/15" />
@@ -130,7 +130,7 @@ export default function Projects() {
                   className="project-card group cursor-pointer"
                   onClick={() => setActiveProject(isOpen ? null : project.id)}
                 >
-                  {/* ── Main row: id | preview | content | actions ─── */}
+                  {/* id | preview | content | actions */}
                   <div className="grid grid-cols-[auto_auto_1fr_auto] gap-0 items-stretch">
 
                     {/* Project ID */}
@@ -185,7 +185,7 @@ export default function Projects() {
                         </h3>
                         <a
                           href={project.liveUrl}
-                          // onClick={(e) => e.stopPropagation()}
+                          onClick={(e) => e.stopPropagation()}
                           className="group p-1 flex items-center justify-center"
                           style={{ borderColor: `${project.color}30`, color: project.color, width: '30px', height: '30px' }}
                         >

@@ -183,24 +183,6 @@ export default function Hero() {
             Contact Me
           </a>
         </motion.div>
-
-        {/* <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.3 }}
-          className="flex justify-center gap-12 mt-20 pt-10 border-t border-white/5"
-        >
-          {[
-            { num: '3+', label: 'Years Exp.' },
-            { num: '20+', label: 'Projects Built' },
-            { num: '12萬+', label: 'MAU Served' },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="font-['Bebas_Neue'] text-3xl md:text-4xl text-white tracking-wider">{stat.num}</div>
-              <div className="font-['Space_Mono'] text-xs text-white/30 uppercase tracking-widest mt-1">{stat.label}</div>
-            </div>
-          ))}
-        </motion.div> */}
       </motion.div>
 
       {/* Scroll提示 */}

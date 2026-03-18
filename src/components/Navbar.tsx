@@ -37,7 +37,7 @@ export default function Navbar() {
           <span className="font-['Space_Mono'] text-xs tracking-[0.2em] text-white/60 uppercase">Ellie Chen</span>
         </a>
 
-        {/* Desktop links */}
+        {/* Nav導覽連結 */}
         <div className="hidden md:flex items-center gap-10">
           {links.map((link, i) => (
             <motion.a
@@ -54,7 +54,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* stat */}
         <motion.a
           href="#contact"
           initial={{ opacity: 0 }}

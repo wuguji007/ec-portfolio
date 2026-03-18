@@ -3,6 +3,8 @@ import { motion, useInView } from 'framer-motion';
 import { skills } from '../data/projects';
 
 const TECH_STACK = [
+  { name: 'Docker', icon: '🐳', color: '#2496ED' },
+  { name: 'AWS', icon: '☁', color: '#FF9900' }, 
   { name: 'Python', icon: '🐍', color: '#3178C6' },
   { name: 'FastAPI', icon: '𐓏', color: '#00e4f0c3' },
   { name: 'Pino', icon: '🌲', color: '#3cc900' },
@@ -13,8 +15,6 @@ const TECH_STACK = [
   { name: 'Prisma', icon: '◧', color: '#5A67D8' },
   { name: 'PostgreSQL', icon: '🐘', color: '#336791' },
   { name: 'Redis', icon: '◉', color: '#DC382D' },
-  { name: 'Docker', icon: '🐳', color: '#2496ED' },
-  { name: 'AWS', icon: '☁', color: '#FF9900' }, 
 ];
 
 export default function Skills() {
@@ -75,7 +75,7 @@ export default function Skills() {
                 </div>
               </div>
 
-              {/* Icon grid */}
+              {/* skills grid */}
               <div className="skill-icon-grid">
                 {skillGroup.items.map((item) => (
                   <div key={item.name} className="skill-icon-item">
