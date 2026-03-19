@@ -48,12 +48,11 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="space-y-8"
           >
-            <div className="space-y-5">
+            <div className="space-y-6">
               {[
-                { icon: Mail, label: 'Email', value: 'alie40521@gmail.com', href: 'mailto:alie40521@gmail.com', color: '#FF2D6B' },
+                { icon: Mail, label: 'Email', value: 'alie40521@gmail.com', href: '#contact', color: '#FF2D6B' },
                 { icon: Github, label: 'GitHub', value: 'github.com/wuguji007', href: 'https://github.com/wuguji007', color: '#00F5FF' },
                 // { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/elliechen', href: '#', color: '#BF5AF2' },
-                // { icon: Twitter, label: 'Twitter / X', value: '@ellie_codes', href: '#', color: '#39FF14' },
               ].map(({ icon: Icon, label, value, href, color }) => (
                 <a
                   key={label}
