@@ -2,8 +2,9 @@ import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { projects } from '../data/projects';
 import {
-  ExternalLink, Github, ChevronRight, Monitor,
-  ShoppingCart, GraduationCap, BarChart3, Kanban, KeyRound,
+  ExternalLink, Github, ChevronRight, Monitor, BookOpen,
+  ShoppingCart, GraduationCap, BarChart3, Kanban,
+  KeyRound, Link,
   type LucideProps,
 } from 'lucide-react';
 import type { FC } from 'react';
@@ -15,6 +16,9 @@ const ICON_MAP: Record<string, FC<LucideProps>> = {
   BarChart3,
   Kanban,
   KeyRound,
+  BookOpen,
+  Link,
+  Monitor,
 };
 
 // Project預覽視窗元件
@@ -22,7 +26,7 @@ function PreviewFrame({ project }: { project: typeof projects[0] }) {
   const Icon = ICON_MAP[project.icon] ?? Monitor;
   return (
     <div className="relative" style={{ filter: `drop-shadow(0 0 16px ${project.color}20)` }}>
-      {/* Corner brackets */}
+      {/* 邊角brackets */}
       <div className="absolute -top-1 -left-1 w-4 h-4 border-t-2 border-l-2 z-10" style={{ borderColor: project.color }} />
       <div className="absolute -top-1 -right-1 w-4 h-4 border-t-2 border-r-2 z-10" style={{ borderColor: project.accentColor }} />
       <div className="absolute -bottom-1 -left-1 w-4 h-4 border-b-2 border-l-2 z-10" style={{ borderColor: project.accentColor }} />

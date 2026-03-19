@@ -22,11 +22,16 @@ export default function About() {
             className="relative"
           >
             {/* Avatar */}
-            <div className="relative w-full aspect-[4/5] max-w-sm mx-auto">
+            <div className="relative w-full aspect-[5/5] max-w-sm mx-auto">
               {/* 外部glow frame */}
               <div className="absolute inset-0 border border-[#00F5FF]/20 border-glow-cyan" />
               {/* 內部漸層 */}
               <div className="absolute inset-2 overflow-hidden">
+                <img
+                  src="https://storage.googleapis.com/ec_portfolio_assets/photoforportfolio-s.png"
+                  alt="ec-photo"
+                  className='object-contain'
+                />
                 <div className="w-full h-full bg-gradient-to-br from-[#BF5AF2]/20 via-[#050508] to-[#00F5FF]/20 flex items-center justify-center">
 
                   <div className="text-center">

@@ -3,8 +3,8 @@ import { motion, useInView } from 'framer-motion';
 import { skills } from '../data/projects';
 
 const TECH_STACK = [
-  { name: 'Docker', icon: '🐳', color: '#2496ED' },
-  { name: 'AWS', icon: '☁', color: '#FF9900' }, 
+  { name: 'Redis', icon: '◉', color: '#DC382D' },
+  { name: 'Prisma', icon: '◧', color: '#5A67D8' },
   { name: 'Python', icon: '🐍', color: '#3178C6' },
   { name: 'FastAPI', icon: '𐓏', color: '#00e4f0c3' },
   { name: 'Pino', icon: '🌲', color: '#3cc900' },
@@ -12,9 +12,9 @@ const TECH_STACK = [
   { name: 'Fastify', icon: '𝙛', color: '#ffffff' },
   { name: 'Zod', icon: '💎', color: '#039fff' },
   { name: 'Zustand', icon: '🐻', color: '#923d00' },
-  { name: 'Prisma', icon: '◧', color: '#5A67D8' },
   { name: 'PostgreSQL', icon: '🐘', color: '#336791' },
-  { name: 'Redis', icon: '◉', color: '#DC382D' },
+  { name: 'Docker', icon: '🐳', color: '#2496ED' },
+  { name: 'AWS', icon: '☁', color: '#FF9900' }, 
 ];
 
 export default function Skills() {
@@ -147,7 +147,7 @@ export default function Skills() {
             Methodologies & Practices
           </div>
           <div className="flex flex-wrap gap-3">
-            {['TDD', 'CI/CD', 'REST API Design', 'Microservices', 'Performance Optimization', 'Jest Testing', 'System Design', 'Clean Architecture'].map((item) => (
+            {['REST API Design', 'CI/CD', 'TDD', 'Microservices', 'Performance Optimization', 'Jest Testing', 'System Design', 'Clean Architecture'].map((item) => (
               <span
                 key={item}
                 className="px-4 py-2 border border-white/8 bg-white/[0.02] text-white/50 text-sm font-['Space_Mono'] tracking-wider hover:border-[#BF5AF2]/30 hover:text-[#BF5AF2]/70 transition-all duration-200"

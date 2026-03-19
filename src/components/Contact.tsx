@@ -36,7 +36,7 @@ export default function Contact() {
             <span style={{ color: '#FF2D6B' }} className="glow-pink">Connect</span>
           </h2>
           <p className="text-white/40 text-sm mt-4 max-w-md">
-            正在尋找新機會，或想聊聊有趣的技術問題？隨時歡迎聯絡！
+            正在尋找新機會，隨時歡迎聯絡！
           </p>
         </motion.div>
 
@@ -50,10 +50,10 @@ export default function Contact() {
           >
             <div className="space-y-5">
               {[
-                { icon: Mail, label: 'Email', value: 'ellie.chen@email.com', href: 'mailto:ellie.chen@email.com', color: '#FF2D6B' },
-                { icon: Github, label: 'GitHub', value: 'github.com/elliechen', href: '#', color: '#00F5FF' },
-                { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/elliechen', href: '#', color: '#BF5AF2' },
-                { icon: Twitter, label: 'Twitter / X', value: '@ellie_codes', href: '#', color: '#39FF14' },
+                { icon: Mail, label: 'Email', value: 'alie40521@gmail.com', href: 'mailto:alie40521@gmail.com', color: '#FF2D6B' },
+                { icon: Github, label: 'GitHub', value: 'github.com/wuguji007', href: 'https://github.com/wuguji007', color: '#00F5FF' },
+                // { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/elliechen', href: '#', color: '#BF5AF2' },
+                // { icon: Twitter, label: 'Twitter / X', value: '@ellie_codes', href: '#', color: '#39FF14' },
               ].map(({ icon: Icon, label, value, href, color }) => (
                 <a
                   key={label}
@@ -68,7 +68,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-['Space_Mono'] text-xs text-white/30 uppercase tracking-widest">{label}</div>
-                    <div className="text-white/70 text-sm group-hover:text-white transition-colors mt-0.5">{value}</div>
+                    <div className="text-white/70 text-normal group-hover:text-white transition-colors mt-0.5">{value}</div>
                   </div>
                   <div className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
                     <span style={{ color }}>↗</span>
@@ -84,7 +84,7 @@ export default function Contact() {
                 <span className="font-['Space_Mono'] text-xs text-[#39FF14] uppercase tracking-widest">Open to Opportunities</span>
               </div>
               <p className="text-white/50 text-sm leading-relaxed">
-                目前積極尋求 Frontend / Fullstack 工程師職位。歡迎全職、約聘合作，也接受有趣的 side project 邀約。
+                目前積極尋求 Backend / Frontend / Fullstack 工程師職位。歡迎全職、約聘合作，也接受有趣的 side project 邀約。
               </p>
             </div>
           </motion.div>
