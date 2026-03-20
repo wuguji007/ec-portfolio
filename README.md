@@ -1,13 +1,44 @@
 # EC-Portfolio 
 
-EC-Portfolio 是一個基於 React 18 與 TypeScript 打造的極速響應式作品集網站。專案採用 Vite 作為核心建構工具，結合 Tailwind CSS、 CSS Keyframes 與高階動效庫 Framer Motion，旨在提供卓越的視覺體驗與流暢的交互動態。
+EC-Portfolio 是一個基於 React 與 TypeScript 打造的極速響應式作品集網站。專案採用 Vite 作為核心建構工具，結合 Tailwind CSS、 CSS Keyframes 與高階動效庫 Framer Motion，旨在提供卓越的視覺體驗與流暢的交互動態。
 
+
+## Lighthouse 效能指標
+
+> 部署於 Vercel CDN，使用 Chrome DevTools Lighthouse（Mobile 模式）
+
+![Lighthouse Score](https://storage.googleapis.com/ec_portfolio_assets/ec-lighthouse-webp.webp)
+
+| 指標 | 分數 |
+|------|------|
+| ⚡ 效能 Performance | 🟢 93 |
+| ♿ 無障礙功能 Accessibility | 🟡 73 |
+| ✅ 最佳做法 Best Practices | 🟢 96 |
+| 🔍 搜尋引擎最佳化 SEO | 🟢 91 |
+
+---
 
 ## 專案亮點
 - 混合動畫系統 (Hybrid Animation System)：結合 CSS Keyframes (處理低開銷、循環背景動效) 與 Framer Motion (處理滾動觸發、進入退出與手勢互動)，實現性能與視覺效果的完美平衡。
 - TypeScript 嚴格類型開發：100% 使用 TS 進行組件開發，確保專案資料流（Data Flow）與 Props 傳遞的精確性。
 - Vite 優化打包：利用 Vite 的 Rollup 打包特性，實現極小體積的 CSS/JS 輸出，優化 Core Web Vitals (LCP/FID) 指標。
 - 組件化架構設計：高度模組化的目錄結構，將 Hero、Skills、Projects 等功能區塊徹底解耦，便於維護與擴展。
+
+---
+
+## 效能優化歷程
+
+透過系統性的 Lighthouse 診斷與逐步修正，效能分數從初始 **46 分提升至 93 分**。
+
+### 優化時間軸
+
+```
+46 → 54   CLS 修正：scanline 動畫從 top 改為 transform，消除 Layout Reflow
+54 → 78   FCP/LCP 改善：Fonts preload、LCP 元素修正、React.lazy 拆分 chunk
+78 → 93   部署至 Vercel CDN，獲得邊緣節點加速與 Brotli 壓縮
+```
+
+---
 
 ## 技術棧
 
@@ -76,7 +107,7 @@ npm run build
 ## 專案細節分析
 
 ### 數據驅動 UI (Data-Driven)
-- 所有作品資訊皆儲存於 src/data/projects.ts，並通過 TypeScript Interface 嚴格定義。這種設計讓 UI 保持純粹（Pure Component），僅負責接收數據並透過 Framer Motion 渲染。
+- 所有作品資訊皆儲存於 src/data/projects.ts，並通過 TypeScript Interface 嚴格定義，讓 UI 保持純粹（Pure Component），僅負責接收數據並透過 Framer Motion 渲染。
 
 ### 組件實作細節
 - Navbar.tsx: 結合 framer-motion 的 AnimatePresence 實現移動端選單的滑入滑出。

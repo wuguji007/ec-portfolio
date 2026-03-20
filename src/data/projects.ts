@@ -92,7 +92,7 @@ export const projects: Project[] = [
     category: 'Frontend',
     icon: 'Monitor',
     previewImg: 'https://storage.googleapis.com/ec_portfolio_assets/project_image/portfolio-homepage.png',
-    liveUrl: 'https://ec-portfolio-xrzr.onrender.com/',
+    liveUrl: 'https://ec-portfolio-rho.vercel.app/',
     githubUrl: 'https://www.google.com/search?q=https://github.com/wuguji007/ec-portfolio',
   },
   {
