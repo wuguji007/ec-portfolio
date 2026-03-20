@@ -1,9 +1,17 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 export default function About() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-100px' });
+
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    if (imgRef.current) {
+      imgRef.current.setAttribute('fetchpriority', 'high');
+    }
+  }, []);
 
   return (
     <section id="about" className="relative py-32 overflow-hidden">
@@ -28,9 +36,13 @@ export default function About() {
               {/* 內部漸層 */}
               <div className="absolute inset-2 overflow-hidden">
                 <img
-                  src="https://storage.googleapis.com/ec_portfolio_assets/photoforportfolio-s.png"
-                  alt="ec-photo"
-                  className='object-contain'
+                  ref={imgRef}
+                  src="https://storage.googleapis.com/ec_portfolio_assets/photoforportfolio-s-webp.webp"
+                  alt="Ellie Chen"
+                  width={400}
+                  height={400}
+                  decoding="async"
+                  className="object-cover w-full h-full"
                 />
                 <div className="w-full h-full bg-gradient-to-br from-[#BF5AF2]/20 via-[#050508] to-[#00F5FF]/20 flex items-center justify-center">
 

@@ -18,6 +18,22 @@ export default function Navbar() {
     { label: 'Contact', href: '#contact' },
   ];
 
+
+  // 修正：先關閉選單，等動畫結束後再 scroll，避免 collapse 動畫中斷 scrollIntoView
+  const handleMobileNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    const targetId = href.replace('#', '');
+    // 等待 AnimatePresence exit 動畫完成（約 300ms）後再 scroll
+    setTimeout(() => {
+      const el = document.getElementById(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 320);
+  };
+
+
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -94,7 +110,8 @@ export default function Navbar() {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: i * 0.08 }}
                 className="block py-3 nav-link text-base"
-                onClick={() => setMenuOpen(false)}
+                // onClick={() => setMenuOpen(false)}
+                onClick={(e) => handleMobileNavClick(e, link.href)}
               >
                 <span className="text-[#00F5FF]/60 mr-2">0{i + 1}.</span>
                 {link.label}
