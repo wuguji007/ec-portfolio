@@ -147,7 +147,7 @@ export default function Skills() {
             Methodologies & Practices
           </div>
           <div className="flex flex-wrap gap-3">
-            {['REST API Design', 'CI/CD', 'TDD', 'Microservices', 'Performance Optimization', 'Jest Testing', 'System Design', 'Clean Architecture'].map((item) => (
+            {['REST API Design', 'CI/CD', 'SDD', 'Microservices', 'Performance Optimization', 'Jest Testing', 'System Design', 'Clean Architecture'].map((item) => (
               <span
                 key={item}
                 className="px-4 py-2 border border-white/8 bg-white/[0.02] text-white/50 text-sm font-['Space_Mono'] tracking-wider hover:border-[#BF5AF2]/30 hover:text-[#BF5AF2]/70 transition-all duration-200"

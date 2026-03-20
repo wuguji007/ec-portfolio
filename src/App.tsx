@@ -9,11 +9,9 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <div className="relative bg-[#050508] min-h-screen">
-      {/* Global noise + scanline overlays */}
       <div className="noise-overlay" />
       <div className="scanline" />
 
-      {/* Content */}
       <Navbar />
       <main>
         <Hero />

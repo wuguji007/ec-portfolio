@@ -78,24 +78,22 @@ export default function About() {
 
             <div className="space-y-5 text-white/60 leading-relaxed text-sm md:text-base">
               <p>
-                熱愛用程式碼解決真實問題的全端工程師。畢業於XX大學XX系。
+                從化學研究跨界軟體領域的開發者。畢業於中國醫藥大學藥學所。
               </p>
               <p>
-                擅長以 <span className="text-[#00F5FF]">React / Next.js</span> 打造流暢的使用者體驗，
-                並透過 <span className="text-[#BF5AF2]">Node.js + PostgreSQL</span> 建構穩定的後端系統。
-                對效能優化、系統架構設計與 CI/CD 自動化有深厚的實戰經驗。
+                擅長以 <span className="text-[#00F5FF]"> React 生態圈 (TypeScript / Vite) </span>打造高效能且流暢的使用者體驗，並透過<span className="text-[#BF5AF2]"> Node.js 與 Python (FastAPI) </span> 建構具備分層架構的穩定後端系統。具備前端複雜動效優化、第三方金流串接、以及 Docker 容器化與 CI/CD 自動化部署的專案實作經驗。
               </p>
               <p>
-                目前積極尋求能夠挑戰技術邊界的職位，期望加入注重工程品質的高速成長團隊。
+                期望將研究人員的嚴謹邏輯與分析思維，貢獻給注重工程品質的高速成長團隊。
               </p>
             </div>
 
-            {/* 身分摘要 */}
+            {/* 身分summary */}
             <div className="grid grid-cols-2 gap-4 mt-10">
               {[
                 { label: 'Education', value: 'XX大學 XXX系' },
-                { label: 'Focus', value: 'React / Fullstack' },
-                { label: 'Languages', value: 'Node.js / TypeScript' },
+                { label: 'Focus', value: 'Software Engineering / React / Node.js' },
+                { label: 'Languages', value: 'Node.js / Python(FastAPI) / TypeScript' },
                 { label: 'Availability', value: 'Immediate Start' },
               ].map(({ label, value }) => (
                 <div key={label} className="border-l-2 border-[#00F5FF]/20 pl-4">
@@ -105,16 +103,16 @@ export default function About() {
               ))}
             </div>
 
-            {/* Download CV */}
-            <motion.a
+            {/* Resume link */}
+            {/* <motion.a
               href="#"
               whileHover={{ x: 4 }}
               className="inline-flex items-center gap-3 mt-10 font-['Space_Mono'] text-xs tracking-[0.15em] text-[#00F5FF] uppercase group"
             >
-              <span>Download Resume</span>
+              <span>View more on Resume</span>
               <span className="w-8 h-px bg-[#00F5FF] group-hover:w-16 transition-all duration-300" />
               <span>↗</span>
-            </motion.a>
+            </motion.a> */}
           </motion.div>
         </div>
       </div>
