@@ -40,7 +40,7 @@ export const projects: Project[] = [
   {
     id: '02',
     title: 'LEARNEE',
-    subtitle: '全端雙角色線上教學平台',
+    subtitle: '全端雙角色線上教學平台 (目前已開發API：登入/註冊、講師身份新增/修改/刪除課程API、Nav搜尋欄查詢課程API，部分功能尚在開發中，敬請期待)',
     description: '整合 MERN Stack 與 GitHub Actions CI/CD 自動化部署的高效能教育平台。除了具備嚴密的雙角色權限管理與課程生命週期管理，並針對 Web 安全性（XSS/CSRF）進行深度優化，更導入 Framer Motion 實現細膩的 UI 動態交互，為師生提供流暢且具沉浸感的線上學習體驗。',
     highlights: [
       'Passport JWT 身份驗證與雙角色（講師/學生）權限系統',
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     id: '04',
     title: 'EC-Portfolio',
     subtitle: '極速效能與流暢動效作品集',
-    description: '基於 React 18 與 TypeScript 打造，專注於 Web 效能優化的現代化作品集。整合 Vite 與混合動畫系統（CSS + Framer Motion），在確保 Core Web Vitals 高分評價的同時，提供極致流暢的滾動與交互動態體驗。',
+    description: '基於 React 與 TypeScript 打造，專注於 Web 效能優化的現代化作品集。整合 Vite 與混合動畫系統（CSS + Framer Motion），在確保 Core Web Vitals 高分評價的同時，提供極致流暢的滾動與交互動態體驗。',
     highlights: ['混合動畫系統：兼顧高性能 CSS Keyframes 與高度交互的 Framer Motion', 'TypeScript 100% 嚴格類型開發，確保組件間數據流的精確與穩定', 'Vite 生產環境打包優化，實現極小體積與極速的 LCP 載入表現', '數據驅動 (Data-Driven) 架構，將內容數據與 UI 動效邏輯徹底解耦',],
     tech: ['React 18', 'TypeScript', 'Vite', 'Framer Motion', 'Tailwind CSS', 'Lucide React'],
     color: '#BF5AF2',
