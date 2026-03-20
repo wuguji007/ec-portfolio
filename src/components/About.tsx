@@ -91,7 +91,7 @@ export default function About() {
             {/* 身分summary */}
             <div className="grid grid-cols-2 gap-4 mt-10">
               {[
-                { label: 'Education', value: 'XX大學 XXX系' },
+                { label: 'Education', value: '中國醫藥大學 藥學研究所' },
                 { label: 'Focus', value: 'Software Engineering / React / Node.js' },
                 { label: 'Languages', value: 'Node.js / Python(FastAPI) / TypeScript' },
                 { label: 'Availability', value: 'Immediate Start' },
